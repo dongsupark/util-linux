@@ -22,7 +22,7 @@ dnl version details from <major>.<minor>[-<suffix>]
 PACKAGE_VERSION_MAJOR=$(echo $PACKAGE_VERSION | awk -F. '{print $1}')
 PACKAGE_VERSION_MINOR=$(echo $PACKAGE_VERSION | awk -F. '{print $2}' \
 					      | awk -F- '{print $1}')
-PACKAGE_VERSION_RELEASE=0
+PACKAGE_VERSION_RELEASE=1
 
 dnl libblkid version
 LIBBLKID_VERSION="$PACKAGE_VERSION_MAJOR.$PACKAGE_VERSION_MINOR.$PACKAGE_VERSION_RELEASE"
